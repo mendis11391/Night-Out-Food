@@ -1,0 +1,75 @@
+*,:after,:before {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+     font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+@font-face {
+    font-family: Aller_Light;
+    src: url(../fonts/Aller/Aller_Lt.ttf);
+}
+
+@font-face {
+    font-family: Exo_Extra_Light;
+    src: url(../fonts/Exo/Exo-Light.otf);
+}
+
+@font-face {
+    font-family: Advent;
+    src: url(../fonts/Advent/adventpro-medium.ttf);
+}
+
+.textLeft{text-align: left;}
+.textCenter{text-align: center;}
+.textRight{text-align: right;}
+
+.m{
+    margin: 5px;
+}
+
+.m-t-5{
+    margin-top: 5px;
+}
+.m-r-5{
+    margin-right: 5px;
+}
+
+.m-l-5{
+    margin-left: 5px;
+}
+
+.m-b-5{
+    margin-bottom: 5px;
+}
+
+
+/* Header Offers Section */
+.headerContactAndOffer{
+    background: linear-gradient(90deg, #FF9800, #FF5722);
+    color: #fff;
+}
+
+.headerContactAndOffer h4{
+    font-family: Advent;
+    font-weight: 500;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.headerContactAndOffer button{
+    background: transparent !important;
+    border: 1px solid #fff;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
