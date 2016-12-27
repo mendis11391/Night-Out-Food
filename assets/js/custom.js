@@ -21,6 +21,22 @@ $(document).ready(function(){
         }
     });
 
+    /* Location Search Jquery Autocomplete Initialization*/
+    $( function() {
+        var servingLocations = [
+        "J P Nagar 5th phase",
+        "J P Nagar 6th Phase",
+        "BTM Layout",
+        "Kumarswamy Layout",
+        "Jaynagar 3rd Block",
+        "Jaynagar 4th Block",
+        "Jaynagar 5th Block"
+        ];
+        $( "#locationSearch" ).autocomplete({
+        source: servingLocations
+        });
+    } );
+
     $('.owl-carousel').owlCarousel({
         loop:true,
         center: true,
