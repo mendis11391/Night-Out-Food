@@ -41,11 +41,10 @@ $(document).ready(function(){
         loop:true,
         autoplay: true,
         autoplayTimeout: 7000,
-        navigation: false,
-        nav: false,
+        nav: true,
         dots: false,
         margin: 10,
-        navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+        navText: ["<img src='assets/images/cheveron-black-left.png' />","<img src='assets/images/cheveron-black-right.png' />"],
         responsive: {
             0: {
                 items: 1
@@ -54,12 +53,29 @@ $(document).ready(function(){
                 items: 3
             },
             1000: {
-                items: 4
+                items: 5
             }
         }
     });
 
-    $('#myCarousel').carousel({
-	    interval: 10000
-	})
+    $('.owl-discount-carousel').owlCarousel({
+        loop:true,
+        autoplay: true,
+        autoplayTimeout: 7000,
+        nav: true,
+        dots: false,
+        margin: 10,
+        navText: ["<img src='assets/images/cheveron-left.png' />","<img src='assets/images/cheveron-right.png' />"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
 });

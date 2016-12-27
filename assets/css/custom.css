@@ -15,33 +15,33 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
-body{
-    font-family: Exo_Extra_Light;
-}
-
-@font-face {
-    font-family: Aller_Light;
-    src: url(../fonts/Aller/Aller_Lt.ttf);
-}
-
-@font-face {
-    font-family: Exo_Extra_Light;
-    src: url(../fonts/Exo/Exo-Light.otf);
-}
-
-@font-face {
-    font-family: Exo_Bold;
-    src: url(../fonts/Exo/Exo-Medium.otf);
-}
-
-@font-face {
-    font-family: Advent;
-    src: url(../fonts/Advent/adventpro-medium.ttf);
-}
-
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+/* */
+@font-face {
+    font-family: tittlium;
+    src: url(../fonts/tittlium/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: mm;
+    src: url(../fonts/mm/mn.ttf);
+}
+
+@font-face {
+    font-family: miso;
+    src: url(../fonts/miso/miso-bold.ttf);
+}
+
+@font-face {
+    font-family: changa;
+    src: url(../fonts/changa/Changa-Regular.ttf);
+}
+
+body{
+    font-family: tittlium;
 }
 
 .textLeft{text-align: left;}
@@ -49,7 +49,20 @@ body{
 .textRight{text-align: right;}
 
 input{
-    font-family: Roboto;
+    font-family: tittlium;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+::-moz-placeholder {
+  color: #fff;
+}
+:-ms-input-placeholder {
+  color: #fff;
+}
+:-moz-placeholder {
+  color: #fff;
 }
 
 .m{
@@ -79,6 +92,10 @@ input{
     padding-top: 5px;
 }
 
+.p-t-15{
+    padding-top: 15px;
+}
+
 .p-l-5{
     padding-left: 5px;
 }
@@ -90,12 +107,13 @@ input{
 
 /* Header Offers Section */
 .headerContactAndOffer{
+    /*background: linear-gradient(90deg, #00d2ff, #3a7bd5);*/
     background: linear-gradient(90deg, #FF9800, #FF5722);
     color: #fff;
 }
 
 .headerContactAndOffer h4{
-    font-family: Advent;
+    font-family: tittlium;
     font-weight: 500;
     padding: 5px;
     font-size: 16px;
@@ -118,7 +136,7 @@ input{
 }
 
 .siteHeaderBanner h1, .siteHeaderBanner p{
-    font-family: Exo_Bold;
+    font-family: tittlium;
     color: #fff;
 }
 
@@ -127,7 +145,6 @@ input{
 }
 
 .overlay{
-    background: linear-gradient(180deg, rgba(0,0,0,0.85), rgba(0,0,0,0.7));
     background: linear-gradient(180deg, rgba(0,0,0,0.85), rgba(0,0,0,0.7));
     background-size: 100%;
 }
@@ -152,7 +169,7 @@ input{
 }
 
 .login-icon{
-    width: 25px;
+    width: 20px;
 }
 
 .menu img{
@@ -234,12 +251,13 @@ input, input[type="text"]{
 
 .LogoandMenuArea input[type=text]{
     background: url(../images/location.png) 0 no-repeat;
+    background-size: 25px;
     display: inline-block;
     width: 100%;
     height: 50px;
     padding: 10px 0 10px 50px;
-    font-size: 20px;
-    background-position: 5px;
+    font-size: 15px;
+    background-position: 10px;
     color: #fff;
     border: 1px solid #fff;
 }
@@ -260,6 +278,10 @@ input, input[type="text"]{
     height: 48px;
 }
 
+.how-it-works{
+    background: #f9f9f9;
+}
+
 .how-it-works h3{
     padding-top: 35px;
     font-size: 2em;
@@ -273,8 +295,7 @@ input, input[type="text"]{
 
 .how-it-works-End{
     padding-bottom: 10px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid #e7e9e9;
+    border-bottom: 1px solid #d3d3d3;
 }
 
 .how-it-works-description{
@@ -286,7 +307,71 @@ input, input[type="text"]{
 }
 
 .whats-on-our-menu-carousel-section .thumbnail{
-    border: none !important;
     box-shadow: 1px 1px 6px #888888;
-    padding: none !important;
+    padding: 0px !important;
+}
+
+.whats-on-our-menu-carousel-section img{
+    padding-top: 40px;
+}
+
+.whats-on-our-menu h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.whats-on-our-menu .container{
+    padding-bottom: 35px;
+}
+
+.owl-menu-carousel .owl-nav{
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+}
+
+.owl-menu-carousel .owl-prev{
+    position: absolute;
+    left: -35px;
+}
+
+.owl-menu-carousel .owl-next{
+    margin-right: -30px !important;
+}
+
+
+/* Footer Section*/
+.footerSection{
+    background: linear-gradient(90deg, #FF9800, #FF5722);
+    color: #fff;
+    font-family: tittlium;
+}
+
+
+
+/* Menu.html */
+.owl-discount-carousel h3{
+    color: #fff;
+}
+
+.owl-nav{
+    color: #fff;
+    position: relative;
+    bottom: 55px;
+}
+
+.owl-prev{
+    float: left;
+}
+
+.owl-next{
+    float: right;
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+    background: none;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: none;
 }
