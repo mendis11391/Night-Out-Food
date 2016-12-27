@@ -280,3 +280,13 @@ input, input[type="text"]{
 .how-it-works-description{
     padding-top: 25px;
 }
+
+.whats-on-our-menu-carousel-section{
+    margin-bottom: 25px;
+}
+
+.whats-on-our-menu-carousel-section .thumbnail{
+    border: none !important;
+    box-shadow: 1px 1px 6px #888888;
+    padding: none !important;
+}
