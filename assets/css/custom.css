@@ -15,6 +15,10 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
+body{
+    font-family: Exo_Extra_Light;
+}
+
 @font-face {
     font-family: Aller_Light;
     src: url(../fonts/Aller/Aller_Lt.ttf);
@@ -30,9 +34,18 @@ html {
     src: url(../fonts/Advent/adventpro-medium.ttf);
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
 .textLeft{text-align: left;}
 .textCenter{text-align: center;}
 .textRight{text-align: right;}
+
+input{
+    font-family: Roboto;
+}
 
 .m{
     margin: 5px;
@@ -51,6 +64,22 @@ html {
 
 .m-b-5{
     margin-bottom: 5px;
+}
+
+.p{
+    padding: 5px;
+}
+
+.p-t-5{
+    padding-top: 5px;
+}
+
+.p-l-5{
+    padding-left: 5px;
+}
+
+.p-r-5{
+    padding-right: 5px;
 }
 
 
@@ -72,4 +101,109 @@ html {
     border: 1px solid #fff;
     margin-top: 11px;
     margin-bottom: 11px;
+}
+
+.siteHeaderBanner{
+    background: url(../images/bannerbg_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.overlay{
+    background: linear-gradient(180deg, rgba(0,0,0,0.85), rgba(0,0,0,0.7));
+    background: linear-gradient(180deg, rgba(0,0,0,0.85), rgba(0,0,0,0.7));
+    background-size: 100%;
+}
+
+.LogoandMenuArea{
+    padding: 18px 0;
+}
+
+.logo{
+    max-width: 170px;
+}
+
+.login-signup{
+    color: #fff;
+    font-size: 15px;
+}
+
+.login-signup:hover{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-icon{
+    width: 25px;
+}
+
+.menu img{
+    margin: 20px 5px;
+}
+
+#loginModal .modal-header{
+    background: #222;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+#loginModal .logo{
+    margin: auto;
+}
+
+#loginModal .close{
+    opacity: 3;
+    color: #fff;
+}
+
+.loginSection{
+    padding: 15px 60px 0px 60px;
+}
+
+input, input[type="text"]{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px ;
+    border-radius: 0px !important;
+    padding: 20px;
+}
+
+.form-control:focus{
+    border-color: rgba(255, 153, 0,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 153, 0,.6);
+}
+
+.form-control{
+    box-shadow:none !important;
+}
+
+.loginButton{
+    color: #fff;
+    background: #FF5722;
+    border: 1px solid #FF5722;
+    padding: 15px;
+    border-radius: 0px !important;
+    font-size: 15px;
+    transition: all .4s ease;
+}
+
+.loginButton:hover{
+    transition: all .4s ease;
+    background: #fff !important;
+    color: #FF9800 !important;
+    border: 1px solid #FF5722 !important;
+}
+
+.forgotPasswordLink, .newAccountLink{
+    color: #FF5722;
+}
+
+.forgotPasswordLink:hover, .newAccountLink:hover, .forgotPasswordLink:focus, .newAccountLink:focus{
+    transition: all .2s ease;
+    color: #00d858;
+    text-decoration: none;
 }

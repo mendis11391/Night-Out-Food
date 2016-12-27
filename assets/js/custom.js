@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('.owl-offers-carousel').owlCarousel({
         loop:true,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 8000,
         navigation: false,
         nav: false,
         dots: false,
