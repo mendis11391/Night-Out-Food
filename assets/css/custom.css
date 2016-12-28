@@ -435,11 +435,14 @@ input, input[type="text"]{
     margin: 0 auto;
 }
 
-.dishContainer .info h3, .dishContainer .info p{
+.dishContainer .info h4, .dishContainer .info p{
     color: #e85826;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.dishContainer a:hover{
+.dishContainer a:hover, .dishContainer a:focus{
     text-decoration: none;
 }
 
@@ -450,11 +453,33 @@ input, input[type="text"]{
     .owl-discount-carousel .owl-nav img{
         width: 50%;
     }
+
+    .textBelowSearchArea p{
+        width: auto;
+    }
 }
 
 
 @media (max-width: 600px) {
     .owl-discount-carousel .owl-nav{
        display: none;
+    }
+
+    .locationSearchButton{
+        width: 100%;
+        bottom: inherit;
+        position: static;
+        margin-top: 10px;
+    }
+
+    .owl-discount-carousel h3{
+        font-size: 20px;
+    }
+
+    .dishContainer h4{
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
