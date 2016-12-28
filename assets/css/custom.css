@@ -339,6 +339,9 @@ input, input[type="text"]{
     margin-right: -30px !important;
 }
 
+.owl-menu-carousel .owl-nav{
+    z-index: -1;
+}
 
 /* Footer Section*/
 .footerSection{
@@ -358,6 +361,7 @@ input, input[type="text"]{
     color: #fff;
     position: relative;
     bottom: 55px;
+    z-index: -1;
 }
 
 .owl-prev{
@@ -374,4 +378,8 @@ input, input[type="text"]{
 
 .owl-theme .owl-nav [class*=owl-]:hover{
     background: none;
+}
+
+.owl-discount-carousel .owl-stage-outer{
+    z-index: -1;
 }
